@@ -1,0 +1,8 @@
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\bin\Debug\Task6UI.exe.config
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\bin\Debug\Task6UI.exe
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\bin\Debug\Task6UI.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\obj\Debug\Task6UI.exe
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\obj\Debug\Task6UI.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\bin\Debug\Task6.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\bin\Debug\Task6.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task6UI\obj\Debug\Task6UI.csprojResolveAssemblyReference.cache

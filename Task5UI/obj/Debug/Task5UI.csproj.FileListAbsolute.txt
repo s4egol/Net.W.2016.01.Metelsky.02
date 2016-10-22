@@ -1,0 +1,8 @@
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\bin\Debug\Task5UI.exe.config
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\bin\Debug\Task5UI.exe
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\bin\Debug\Task5UI.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\bin\Debug\Task5.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\bin\Debug\Task5.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\obj\Debug\Task5UI.csprojResolveAssemblyReference.cache
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\obj\Debug\Task5UI.exe
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5UI\obj\Debug\Task5UI.pdb
