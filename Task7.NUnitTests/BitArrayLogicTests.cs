@@ -22,9 +22,11 @@ namespace Task7.NUnitTests
 
         [TestCase(8, 15, 3, 1)]
         [TestCase(0, 15, 5, 2)]
-        public void Insertion_GetValueException(int number1, int number2, int i, int j)
+        [TestCase(0, 2, -1, -1)]
+        [TestCase(0, 2, 32, 32)]
+        public void Insertion_ArgumentOutOfRangeException(int number1, int number2, int i, int j)
         {
-            Assert.Throws(typeof (ArgumentException), () => Task7.BitArrayLogic.Insertion(number1, number2, i, j));
+            Assert.Throws(typeof (ArgumentOutOfRangeException), () => Task7.BitArrayLogic.Insertion(number1, number2, i, j));
         }
     }
 }

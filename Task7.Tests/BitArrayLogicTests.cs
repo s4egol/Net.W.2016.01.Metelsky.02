@@ -59,13 +59,37 @@ namespace Task7.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void Insertion_IntMaxValueInsertIn15InBits5To3_Returned63()
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void Insertion_IntMaxValueInsertIn15InBits5To3_ReturnedArgumentOutOfRangeException()
         {
             int number1 = 15;
             int number2 = int.MaxValue;
             int i = 5;
             int j = 3;
+
+            int newNumber = Task7.BitArrayLogic.Insertion(number1, number2, i, j);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void Insertion_IntMaxValueInsertIn15InBitsMinus1ToMinus1_ReturnedArgumentOutOfRangeException()
+        {
+            int number1 = 15;
+            int number2 = int.MaxValue;
+            int i = -1;
+            int j = -1;
+
+            int newNumber = Task7.BitArrayLogic.Insertion(number1, number2, i, j);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void Insertion_IntMaxValueInsertIn15InBits32ToMinus32_ReturnedArgumentOutOfRangeException()
+        {
+            int number1 = 15;
+            int number2 = int.MaxValue;
+            int i = 32;
+            int j = 32;
 
             int newNumber = Task7.BitArrayLogic.Insertion(number1, number2, i, j);
         }
