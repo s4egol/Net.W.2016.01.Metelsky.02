@@ -16,6 +16,8 @@ namespace Task6
         /// <returns>String with all letters found</returns>
         public static StringBuilder GetNotRepeatingSequence(StringBuilder str1, StringBuilder str2)
         {
+            if ((str1 == null) || (str2 == null))
+                throw new ArgumentException();
             StringBuilder returnString = new StringBuilder();
             str1.Append(str2);
 

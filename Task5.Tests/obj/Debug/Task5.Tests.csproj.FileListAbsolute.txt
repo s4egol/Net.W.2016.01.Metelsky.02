@@ -1,0 +1,8 @@
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\bin\Debug\Task5.Tests.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\bin\Debug\Task5.Tests.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\bin\Debug\Task5.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\bin\Debug\Task5.pdb
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\obj\Debug\Task5.Tests.csprojResolveAssemblyReference.cache
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\obj\Debug\Task5.Tests.dll
+C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task5.Tests\obj\Debug\Task5.Tests.pdb

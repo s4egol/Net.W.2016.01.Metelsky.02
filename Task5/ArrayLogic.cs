@@ -18,8 +18,12 @@ namespace Task5
         /// <returns>Found element index value or '-1' if the element isn't found</returns>
         public static int GetIndex(int[] array)
         {
+            if (array == null)
+                throw new ArgumentException();
+
             if (array.Length <= 2)
                 return -1;
+
             else
             {
                 for (int i = 1; i < array.Length; i++)

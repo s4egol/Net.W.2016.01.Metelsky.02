@@ -18,6 +18,9 @@ namespace Task7
         /// <returns>The resulting number</returns>
         public static int Insertion(int number1, int number2, int i, int j)
         {
+            if ((i > j) || (i > 31) || (j>31))
+                throw  new ArgumentException();
+
             byte[] bits1 = new byte[32];
             byte[] bits2 = new byte[32];
 

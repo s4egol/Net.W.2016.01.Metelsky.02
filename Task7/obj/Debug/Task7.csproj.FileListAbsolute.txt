@@ -1,5 +1,4 @@
 C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task7\bin\Debug\Task7.dll
 C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task7\bin\Debug\Task7.pdb
-C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task7\obj\Debug\Task7.csprojResolveAssemblyReference.cache
 C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task7\obj\Debug\Task7.dll
 C:\Users\s4egol\Desktop\EPAM\Net.W.2016.01.Metelsky.02\Task7\obj\Debug\Task7.pdb
