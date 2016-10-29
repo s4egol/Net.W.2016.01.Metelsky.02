@@ -11,38 +11,56 @@ namespace Task5.Tests
         {
             int[] array = {1, 2, 3, 2, 1};
 
-            int index = Task5.ArrayLogic.GetIndex(array);
+            int? index = Task5.ArrayLogic.GetIndex(array);
 
             Assert.AreEqual(2,index);
         }
 
         [TestMethod]
-        public void GetIndex_Array_1_2_3_4_5_ReturnedIndexMinus1()
+        public void GetIndex_Array_1_2_3_4_5_ReturnedNull()
         {
             int[] array = { 1, 2, 3, 4, 5 };
 
-            int index = Task5.ArrayLogic.GetIndex(array);
+            int? index = Task5.ArrayLogic.GetIndex(array);
 
-            Assert.AreEqual(-1, index);
+            Assert.AreEqual(null, index);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void GetIndex_Array_null_ReturnedNullReferenceException()
+        {
+            int[] array = null;
+
+            int? index = Task5.ArrayLogic.GetIndex(array);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void GetIndex_Array_null_ReturnedArgumentException()
+        public void GetIndex_ArrayWithoutValue_ReturnedArgumentException()
         {
-            int[] array = null;
+            int[] array = {};
 
-            int index = Task5.ArrayLogic.GetIndex(array);
+            int? index = Task5.ArrayLogic.GetIndex(array);
         }
 
         [TestMethod]
-        public void GetIndex_Array_2_ReturnedIndexMinus1()
+        [ExpectedException(typeof(OverflowException))]
+        public void GetIndex_Array_0_intMaxValue_1_2_ReturnedOverflowException()
+        {
+            int[] array = new int[] { 10, int.MaxValue, 15, 10 };
+
+            int? index = Task5.ArrayLogic.GetIndex(array);
+        }
+
+        [TestMethod]
+        public void GetIndex_Array_2_ReturnedIndexNull()
         {
             int[] array = {2};
 
-            int index = Task5.ArrayLogic.GetIndex(array);
+            int? index = Task5.ArrayLogic.GetIndex(array);
 
-            Assert.AreEqual(-1, index);
+            Assert.AreEqual(null, index);
         }
     }
 }
