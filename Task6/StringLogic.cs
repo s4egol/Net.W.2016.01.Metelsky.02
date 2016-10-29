@@ -11,28 +11,28 @@ namespace Task6
         /// <summary>
         /// Finding a non-repeating sequence of letters
         /// </summary>
-        /// <param name="str1">First String</param>
-        /// <param name="str2">Second String</param>
+        /// <param name="string1">First String</param>
+        /// <param name="string2">Second String</param>
         /// <returns>String with all letters found</returns>
-        public static StringBuilder GetNotRepeatingSequence(StringBuilder str1, StringBuilder str2)
+        public static String GetNotRepeatingSequence(String string1, String string2)
         {
-            if ((str1 == null) || (str2 == null))
+            if ((string1 == null) || (string2 == null))
                 throw new ArgumentException();
-            StringBuilder returnString = new StringBuilder();
-            str1.Append(str2);
+
+            if (string1 == String.Empty && string2 == String.Empty)
+                throw new ArgumentException();
+
+            string1 += string2;
 
             List<char> listOfLetters = new List<char>();
-            for (int i = 0; i < str1.Length; i++)
+            for (int i = 0; i < string1.Length; i++)
             {
-                listOfLetters.Add(str1[i]);
+                listOfLetters.Add(string1[i]);
             }
 
             var result = listOfLetters.Distinct().OrderBy(t => t);
 
-            foreach (var val in result)
-                returnString.Append(val);
-
-            return returnString;
+            return result.Aggregate(String.Empty, (current, val) => current + val);
         }
     }
 }
