@@ -12,11 +12,11 @@ namespace Task6UI
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the first string:");
-            StringBuilder string1 = new StringBuilder(Console.ReadLine());
+            String string1 = Console.ReadLine();
             Console.WriteLine("Enter a second string:");
-            StringBuilder string2 = new StringBuilder(Console.ReadLine());
+            String string2 = Console.ReadLine();
 
-            StringBuilder returnedString = StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = StringLogic.GetNotRepeatingSequence(string1, string2);
             Console.WriteLine("Result:");
             Console.WriteLine(returnedString);
             Console.ReadKey();
