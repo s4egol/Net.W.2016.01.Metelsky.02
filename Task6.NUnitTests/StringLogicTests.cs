@@ -15,29 +15,15 @@ namespace Task6.NUnitTests
         [TestCase("bza", "a", Result = "abz")]
         public string GetNotRepeatingSequence_DistinctOrderValue(string str1, string str2)
         {
-            StringBuilder value1 = new StringBuilder(str1);
-            StringBuilder value2 = new StringBuilder(str2);
-            return Task6.StringLogic.GetNotRepeatingSequence(value1, value2).ToString();
+            return Task6.StringLogic.GetNotRepeatingSequence(str1, str2).ToString();
         }
 
         [TestCase("ab", null)]
         [TestCase(null, "cb")]
+        [TestCase("", "")]
         public void GetNotRepeatingSequence_DistinctOrderValueException(string str1, string str2)
         {
-            StringBuilder value1;
-            StringBuilder value2;
-
-            if (str1 == null)
-                value1 = null;
-            else 
-                value1 = new StringBuilder(str1);
-
-            if (str2 == null)
-                value2 = null;
-            else
-                value2 = new StringBuilder(str2);
-
-            Assert.Throws(typeof (ArgumentException), () => Task6.StringLogic.GetNotRepeatingSequence(value1, value2));
+            Assert.Throws(typeof (ArgumentException), () => Task6.StringLogic.GetNotRepeatingSequence(str1, str2));
         }
 
     }

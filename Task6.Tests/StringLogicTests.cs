@@ -10,10 +10,10 @@ namespace Task6.Tests
         [TestMethod]
         public void GetNotRepeatingSequence_StringAbcAndStringBcd_ReturnedStringAbcd()
         {
-            StringBuilder string1 = new StringBuilder("abc");
-            StringBuilder string2 = new StringBuilder("bcd");
+            String string1 = "abc";
+            String string2 = "bcd";
 
-            StringBuilder returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
             string result = String.Intern(returnedString.ToString());
 
             Assert.AreEqual(String.Intern("abcd"), result);
@@ -22,10 +22,10 @@ namespace Task6.Tests
         [TestMethod]
         public void GetNotRepeatingSequence_StringBbaaAndStringBbaa_ReturnedStringAb()
         {
-            StringBuilder string1 = new StringBuilder("bbaa");
-            StringBuilder string2 = new StringBuilder("bbaa");
+            String string1 = "bbaa";
+            String string2 = "bbaa";
 
-            StringBuilder returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
             string result = String.Intern(returnedString.ToString());
 
             Assert.AreEqual(String.Intern("ab"), result);
@@ -35,32 +35,42 @@ namespace Task6.Tests
         [ExpectedException(typeof(ArgumentException))]
         public void GetNotRepeatingSequence_StringNullAndStringBbaa_ReturnedArgumentException()
         {
-            StringBuilder string1 = null;
-            StringBuilder string2 = new StringBuilder("bbaa");
+            String string1 = null;
+            String string2 = "bbaa";
 
-            StringBuilder returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void GetNotRepeatingSequence_StringAbcdAndStringNull_ReturnedArgumentException()
         {
-            StringBuilder string1 = new StringBuilder("abcd");
-            StringBuilder string2 = null;
+            String string1 = "abcd";
+            String string2 = null;
 
-            StringBuilder returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
         }
 
         [TestMethod]
         public void GetNotRepeatingSequence_StringAbcdAndStringEmpty_ReturnedStringAbcd()
         {
-            StringBuilder string1 = new StringBuilder("abcd");
-            StringBuilder string2 = new StringBuilder();
+            String string1 = "abcd";
+            String string2 = String.Empty;
 
-            StringBuilder returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
             string result = String.Intern(returnedString.ToString());
 
             Assert.AreEqual(String.Intern("abcd"), result);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetNotRepeatingSequence_StringEmptyAndStringEmpty_ReturnedArgumentException()
+        {
+            String string1 = String.Empty;
+            String string2 = String.Empty;
+
+            String returnedString = Task6.StringLogic.GetNotRepeatingSequence(string1, string2);
         }
     }
 }
